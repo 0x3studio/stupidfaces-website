@@ -104,7 +104,7 @@ const Home: NextPage = () => {
                     step={1}
                     min={1}
                     max={10}
-                    disabled={!!contractError || isLoading || isStarted}
+                    disabled={isLoading || isStarted}
                   />
                   <div className={styles.price}>
                     {Math.round(quantity * PRICE * 1000) / 1000} ETH
@@ -136,10 +136,17 @@ const Home: NextPage = () => {
                     </div>
                   )}
                   {contractError && (
-                    <div className={styles.error}>{contractError.message}</div>
+                    <div className={styles.error}>
+                      An error occurred while preparing the transaction. Make
+                      sure that you have enough funds and that you haven’t
+                      reached your limit of 10 tokens.
+                    </div>
                   )}
                   {mintError && (
-                    <div className={styles.error}>{mintError.message}</div>
+                    <div className={styles.error}>
+                      An error occurred while accessing your wallet or
+                      processing the transaction.
+                    </div>
                   )}
                 </>
               )}

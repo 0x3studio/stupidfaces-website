@@ -45,13 +45,7 @@
   text-decoration: none;
 }
 .error {
-  color: #fff;
-  width: 100%;
-  word-wrap: break-word;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 0.9rem;
   line-height: 1.4rem;
-  background: rgba(255, 0, 0, 0.75);
-  padding: 1rem;
-  border-radius: 1rem;
+  color: rgba(255, 0, 0, 1);
 }
