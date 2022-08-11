@@ -1,6 +1,6 @@
 .container {
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%; 
   padding: 2rem;
   display: flex;
 }
@@ -21,8 +21,9 @@
 }
 .logoContainer {
   position: relative;
-  width: 429px;
-  height: 73.5px;
+  max-width: 429px;
+  width: 100%;
+  aspect-ratio: 5.8367346939;
 }
 .price {
   font-size: 1rem;
