@@ -6,6 +6,18 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+  height: 100%;
+}
+
+body {
+  background: url('/img/bg.png') repeat center center;
+}
+
 a {
   color: inherit;
   text-decoration: none;
