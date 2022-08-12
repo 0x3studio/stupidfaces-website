@@ -24,6 +24,7 @@
   max-width: 429px;
   width: 100%;
   aspect-ratio: 5.8367346939;
+  margin-bottom: 1.5rem;
 }
 .price {
   font-size: 1rem;
@@ -49,4 +50,7 @@
   font-size: 0.9rem;
   line-height: 1.4rem;
   color: rgba(255, 0, 0, 1);
+}
+.opensea {
+  margin-top: 1.5rem;
 }
