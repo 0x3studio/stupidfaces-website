@@ -148,6 +148,20 @@ const Home: NextPage = () => {
                       processing the transaction.
                     </div>
                   )}
+                  <div className={styles.opensea}>
+                    <a
+                      href="https://opensea.io/collection/stupid-faces-nft"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Image
+                        src="/img/opensea.svg"
+                        width="50"
+                        height="50"
+                        alt="OpenSea logo"
+                      />
+                    </a>
+                  </div>
                 </>
               )}
             </>
