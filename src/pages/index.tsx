@@ -68,7 +68,18 @@ const Home: NextPage = () => {
         <title>Stupid Faces NFT</title>
         <meta
           name="description"
-          content="1,000 very stupid faces on the Ethereum blockchain. No website. No Twitter. No Discord. No utility. No roadmap. No bullshit."
+          content="1,000 very stupid faces on the Ethereum blockchain. No utility (yet). No roadmap (yet). No bullshit (never)."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://stupidfaces.0x3.studio" />
+        <meta property="og:title" content="Stupid Faces NFT" />
+        <meta
+          property="og:description"
+          content="1,000 very stupid faces on the Ethereum blockchain. No utility (yet). No roadmap (yet). No bullshit (never)."
+        />
+        <meta
+          property="og:image"
+          content="https://stupidfaces.0x3.studio/img/sample.png"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -95,6 +106,14 @@ const Home: NextPage = () => {
                 </>
               ) : (
                 <>
+                  <div className={styles.price}>
+                    You are about to mint <strong>{quantity}</strong> Stupid
+                    Faces NFT{quantity > 1 && "s"} for a total of{" "}
+                    <strong>
+                      {Math.round(quantity * PRICE * 1000) / 1000} ETH
+                    </strong>
+                    . Move the slider below to adjust the quantity.
+                  </div>
                   <Slider
                     color="secondary"
                     value={quantity}
@@ -106,9 +125,6 @@ const Home: NextPage = () => {
                     max={10}
                     disabled={isLoading || isStarted}
                   />
-                  <div className={styles.price}>
-                    {Math.round(quantity * PRICE * 1000) / 1000} ETH
-                  </div>
                   <Button
                     variant="contained"
                     color="secondary"
