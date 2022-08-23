@@ -155,7 +155,7 @@ const Home: NextPage = () => {
                     <div className={styles.error}>
                       An error occurred while preparing the transaction. Make
                       sure that you have enough funds and that you haven’t
-                      reached your limit of 10 tokens.
+                      reached your limit of 100 tokens.
                     </div>
                   )}
                   {mintError && (
