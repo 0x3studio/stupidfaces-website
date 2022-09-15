@@ -82,6 +82,12 @@ const Home: NextPage = () => {
           content="https://stupidfaces.0x3.studio/img/sample.png"
         />
         <link rel="icon" href="/favicon.ico" />
+        <script
+          async
+          defer
+          data-website-id="62f4e8f0-899c-41d7-abce-97abf4ba1105"
+          src="https://umami.0x3.studio/umami.js"
+        ></script>
       </Head>
       <div className={styles.container}>
         <div className={styles.main}>
